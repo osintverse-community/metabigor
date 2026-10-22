@@ -25,7 +25,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/metabigor@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/metabigor@sha256:4fb88b5a174e803784ccc50d72c9566add91cdcd03180059e67bb866e2b9c2d8
   platforms: [linux/amd64, linux/arm64]
   command: ["metabigor", "related", "-f", "json", "-q", "--no-color", "--sources", "{sources}", "{domain}"]
   output_format: jsonl
